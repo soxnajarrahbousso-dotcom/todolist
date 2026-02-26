@@ -57,5 +57,10 @@
   "lint-staged": {
     "src/**/*.{ts,tsx}": [],
     "src/**/*.{json,css,scss}": []
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@mui|@babel|@emotion|@testing-library)/)"
+    ]
   }
 }
